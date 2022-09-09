@@ -41,8 +41,8 @@ used in other modules and functions that wrap up error handling to make code mor
 
 
 
-## 2. Technologies Used
 
+[//]: # "## 2. Technologies Used"
 [//]: # "What technologies were used?" 
 
 
@@ -55,13 +55,13 @@ used in other modules and functions that wrap up error handling to make code mor
 
 
 
-## 3. Learning outcomes
 
+[//]: # "## 3. Learning outcomes"
 [//]: # "What did you learn?" 
 
 
 
-## 4. How to Install and Run
+## 2. How to Install and Run
 
 ### Installation
 
@@ -86,7 +86,7 @@ compilation, but in order for changes to make effect the server must be restarte
 In order to quit the execution you must send SIGINT to the process, which can be usually done by clicking
 control + c. In order to clean the project you can enter in the terminal "make clean".
 
-## 5. Extra Information
+## 3. Extra Information
 ### Codes Implemented and Used by the Server
 
 * 200

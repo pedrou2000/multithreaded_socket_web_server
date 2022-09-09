@@ -1,21 +1,8 @@
-# Multithreaded Socket Web Server
+## Introduction
 
-## 1. Description of the Project
+Authors: Cesar Ramirez & Pedro Urbina, pair 5, group 2301.
 
-[//]: # "What was the purpose of the project?" 
-The main purpose of this project is to implement a completely functional multithreaded web server using sockets and the C language. 
-
-[//]: # "What your application does?" 
-
-
-[//]: # "What problem does it solve" 
-
-
-[//]: # "What was your motivation?" 
-
-
-[//]: # "Why did you build this project?" 
-
+The objective of this practice is to create a completely functional web server which manages GET, POST and OPTIONS requests and can be configured with the server.conf file.
 
 ### Project Structure
 
@@ -29,7 +16,7 @@ The main purpose of this project is to implement a completely functional multith
 
 The project source code is divided mainly in 3 modules:
 * server (server.c): implements the handling of threads and everything related to the socket management. It is the main file
-of the project, the one which will finally be executed as it includes the main function. The server configurations is also carried
+of the project, the one which will finally be executed as it includes the main function. The server configuration is also carried
 out in this file.
 * utils (utils.h and utils.c): contains all the necessary includes for the rest of the modules, the data structure definition
 used in other modules and functions that wrap up error handling to make code more readable.
@@ -37,56 +24,9 @@ used in other modules and functions that wrap up error handling to make code mor
 
 ### Used Libraries
 - We have used the picohttpparser library in order to parse the received http requests.
+
 - We have used the libconfuse library to read and parse the configuration file.
 
-
-
-## 2. Technologies Used
-
-[//]: # "What technologies were used?" 
-
-
-[//]: # "Why you used the technologies you used?" 
-
-
-[//]: # "Some of the challenges you faced and features you hope to implement in the future." 
-
-
-
-
-
-## 3. Learning outcomes
-
-[//]: # "What did you learn?" 
-
-
-
-## 4. How to Install and Run
-
-### Installation
-
-Some version of python and php must be installed on your system, the necessary to execute the
-scripts your server is going to use.
-In order to execute the server the library libconfuse must already be installed in your system.
-You must also have root permissions in order to bind the port.  
-
-### Execution
-
-In order to execute you must only enter "make all" in the terminal so that everything is compiled
-and you can run the server using "sudo ./server", as elevated privileges are needed to bind the port.
-
-In order for the server to work with the usual html file, the media folder containing images and a
-video as the ones given to us be added to htmlfiles/www/.
-
-The port used by the server can be configured in the server.conf file, together with the maximum number
-of clients (i.e. the number of concurrent threads that will be created), the server's signature and the
-path to where the server files are saved. All this can be configured in the server.conf even after
-compilation, but in order for changes to make effect the server must be restarted.
-
-In order to quit the execution you must send SIGINT to the process, which can be usually done by clicking
-control + c. In order to clean the project you can enter in the terminal "make clean".
-
-## 5. Extra Information
 ### Codes Implemented and Used by the Server
 
 * 200
@@ -109,3 +49,26 @@ control + c. In order to clean the project you can enter in the terminal "make c
 Script execution:
 * .py
 * .php
+
+### Installation
+
+Some version of python and php must be installed on your system, the necessary to execute the
+scripts your server is going to use.
+In order to execute the server the library libconfuse must already be installed in your system.
+You must also have root permissions in order to bind the port.  
+
+### Execution
+
+In order to execute you must only enter "make all" in the terminal so that everything is compiled
+and you can run the server using "sudo ./server", as elevated privileges are needed to bind the port.
+
+In order for the server to work with the usual html file, the media folder containing images and a
+video as the ones given to us be added to htmlfiles/www/.
+
+The port used by the server can be configured in the server.conf file, together with the maximum number
+of clients (i.e. the number of concurrent threads that will be created), the server's signature and the
+path to where the server files are saved. All this can be configured in the server.conf even after
+compilation, but in order for changes to make effect the server must be restarted.
+
+In order to quit the execution you must send SIGINT to the process, which can be usually done by clicking
+control + c in the terminal. In order to clean the project you can enter in the terminal "make clean".

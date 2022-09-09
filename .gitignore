@@ -1,0 +1,6 @@
+.DS_Store
+htmlfiles/www/media/
+obj/
+lib/
+trash/
+server
